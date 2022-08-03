@@ -1,0 +1,10 @@
+{% autoescape off %}
+
+    Hola {{ user.first_name }},
+    Porfavor activa tu cuenta dando clic en el siguiente link:
+
+    http://{{ domain }}{% url 'activate' uidb64=uid token=token %}
+
+    Te vemos en Miriwuiri ;)
+
+{% endautoescape %}
